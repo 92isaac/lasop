@@ -1,38 +1,256 @@
-.App {
+/* navbar */
+
+.first-navbar{
+  height: 45px;
+}
+
+.me-auto{
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.navbar {
+  background-color: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  max-width: 1500px;
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-logo{
+    color: #fc1f1f;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  width: 100px;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: #1f5156;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.fa-code {
+  margin-left: 1rem;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+
+.nav-item:hover:after {
+  width: 100%;
+  background: #fc1f1f;
+}
+
+.nav-item.active {
+  color: #ffdd40;
+  border: 1px solid #fc1f1f;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #fc1f1f;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item .active {
+      color: #fc1f1f;
+    border: none;
+  }
+
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fc1f1f;
+
+  }
+}
+
+/*  our goals */
+
+.goals-play{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  /* padding: 40px; */
+}
+
+
+.goals-display{
+  padding: 20px;
+}
+.goals-container{
+  background: #c0d2d4;
+  margin: 0 10px 20px 0;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05),
+  0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  
+}
+
+.goal-title {
+  /* font-weight: 900; */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.goal-description {
+  font-weight: 100;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.duration-text{
+  margin-top: 20px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.duration-text button{
+  background: rgb(241, 123, 123);
+  padding: 10px 80px;
+  border: none;
+  border-radius:  10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Testimonial */
+
+.testimonial-container{
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.testimonial {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+  max-width: 100%;
+  width: 400px;
+  margin: 20px;
+
+}
+
+.testimonial-body {
+  padding: 40px 40px 80px;
+}
+
+.testimonial-body p {
+  color: #555;
+  font-size: 20px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.testimonial-body .fa-quote-right {
+  color: #eee;
+  font-size: 40px;
+  float: right;
+}
+
+.testimonial-footer {
+  background-color: #686de0;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.testimonial-footer img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  height: 120px;
+  width: 120px;
+  margin-top: -100px;
+}
+
+.testimonial-footer h3 {
+  margin: 10px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.testimonial-footer h4 {
+  color: #b3b5ef;
+  margin: 0;
+  letter-spacing: 1px;
 }
