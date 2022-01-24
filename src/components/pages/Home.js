@@ -3,6 +3,7 @@ import Goals from "../Goals";
 import Slider from "../Slider";
 import Duration from "../Duration"
 import Testimonial from "../Testimonial";
+import WhatWeDo from '../WhatWeDo';
 
 const Home = () => {
   return <>
@@ -10,6 +11,7 @@ const Home = () => {
   <Goals/>
   <Duration/>
   <Testimonial/>
+  <WhatWeDo/>
   </>;
 };
 

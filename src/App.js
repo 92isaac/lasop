@@ -3,6 +3,7 @@ import './App.css'
 import NavbarF from "./components/NavbarF";
 import NavbarR from "./components/NavbarR";
 import Home from "./components/pages/Home";
+import Apply from "./components/pages/Apply";
 
 function App() {
   return ( <Router>
@@ -10,6 +11,7 @@ function App() {
   <NavbarR/>
   <Routes>
     <Route path="/" element={ <Home/> } />
+    <Route path="/Apply" element={ <Apply/> } />
   </Routes>
   </Router>
   )}

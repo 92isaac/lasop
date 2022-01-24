@@ -5,15 +5,15 @@ import testimonialfiles from '../testimonialfiles';
 
 console.log(testimonialfiles);
 
-const createTestimonialMap = (lists) => {
+const createTestimonialMap = (listsT) => {
   return (
   <div>
     <Testimonial 
-  key={lists.testimonialName}
-  testText={lists.testimonialText}
-  testImage={lists.testimonialImage}
-  testName={lists.testimonialName}
-  testJob={lists.testimonialJob}
+  // key={listsT.testimonialName}
+  // testText={listsT.testimonialText}
+  // testImage={listsT.testimonialImage}
+  // testName={listsT.testimonialName}
+  // testJob={listsT.testimonialJob}
   />
   {/* <Testimonial
       testText='At LASOP, we provide high quality training to equip our students with industry – recongnised IT skills and knowledge quality companies are looking for.'
