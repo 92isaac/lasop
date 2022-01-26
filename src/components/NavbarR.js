@@ -22,8 +22,6 @@ const [click, setClick] = useState(false);
               
                 to="/"
                 className={({ isActive }) => (isActive ? 'active nav-links' : 'nav-links')}
-                // activeClassName="active"
-                // className="nav-links"
                 onClick={click ? handleClick : null}
               >
                 Home
@@ -34,8 +32,6 @@ const [click, setClick] = useState(false);
               
                 to="/about"
                 className={({ isActive }) => (isActive ? 'active nav-links' : 'nav-links')}
-                // activeClassName="active"
-                // className="nav-links"
                 onClick={click ? handleClick : null}
               >
                 About

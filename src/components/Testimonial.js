@@ -1,17 +1,28 @@
 import React from 'react';
+import TestimonialEntry from './TestimonialEntry';
+import testimonialfiles from './testimonialfiles'
 
-const Testimonial = (props) => {
-  return (<div className="testimonial">
-	<div className="testimonial-body">
-		<p>{props.testText}</p>
-		<i className="fas fa-quote-right"></i>
-	</div>
-	<div className="testimonial-footer">
-		<img src={props.testImage} alt="user" />
-		<h3>{props.testName}</h3>
-		<h4>{props.testJob}</h4>
-	</div>
-</div>);
+const testMap=(testi)=>{
+  return <TestimonialEntry
+  key={testi.name}
+  imgs={testi.imgs}
+  text={testi.text}
+  name={testi.name}
+  fullstar={testi.fullstar}
+  halfstar={testi.halfstar}
+  />
 }
+
+
+const Testimonial = () => {
+  return <section className="testimonial">
+  <h1>What Our Student Says</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+  <div className="row">
+     {testimonialfiles.map(testMap)}
+    </div>
+</section>;
+};
 
 export default Testimonial;

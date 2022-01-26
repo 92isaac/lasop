@@ -1,34 +1,20 @@
 import React from 'react';
-import Testimonial from './Testimonial'
-import testimonialfiles from '../testimonialfiles';
 
-
-console.log(testimonialfiles);
-
-const createTestimonialMap = (listsT) => {
-  return (
-  <div>
-    <Testimonial 
-  // key={listsT.testimonialName}
-  // testText={listsT.testimonialText}
-  // testImage={listsT.testimonialImage}
-  // testName={listsT.testimonialName}
-  // testJob={listsT.testimonialJob}
-  />
-  {/* <Testimonial
-      testText='At LASOP, we provide high quality training to equip our students with industry – recongnised IT skills and knowledge quality companies are looking for.'
-  testImage={lists.testimonialImage}
-  testName="David Shuaib"
-  testJob="Frontend Developer"
-  /> */}
-  <Testimonial/>
-  </div>
-  )};
-
-const TestimonialEntry = () => {
-  return <div className="testimonial-container">
-    {testimonialfiles.map(createTestimonialMap)}
+const TestimonialEntry = (props) => {
+  return <div>
+        <div className="testimonial-col">
+      <img src={props.imgs} alt="user1 "/>
+      <div>
+        <p>{props.text}</p>
+        <h3>{props.name}</h3>
+        <i className={props.fullstar}></i>
+        <i className={props.fullstar}></i>
+        <i className={props.fullstar}></i>
+        <i className={props.fullstar}></i>
+        <i className={props.halfstar}></i>
+      </div>
+    </div>
   </div>;
-  };
+};
 
 export default TestimonialEntry;

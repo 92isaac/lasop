@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kiwi Maru', serif;
+}
+
 /* navbar */
 
 .first-navbar{
@@ -148,6 +154,15 @@
 
 /*  our goals */
 
+.goalheader h2{
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 100px;
+}
+.goalheader p{
+  text-align: center;
+}
+
 .goals-play{
   display: flex;
   justify-content: space-around;
@@ -202,68 +217,64 @@
   border-radius:  10px;
 }
 
-/* Testimonial */
+  /* testimonial */
 
-.testimonial-container{
-  margin: 20px;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
 
-.testimonial {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  overflow: hidden;
-  max-width: 100%;
-  width: 400px;
-  margin: 20px;
-}
+  .testimonial {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    display: unset;
+    
+  }
 
-.testimonial-body {
-  padding: 40px 40px 80px;
-}
+  .row{
+        cursor: pointer;
+        /* display: grid; */
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+  }
 
-.testimonial-body p {
-  color: #555;
-  font-size: 20px;
-  line-height: 36px;
-  margin: 0;
-}
+  .testimonial-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px; 
+   cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+  }
 
-.testimonial-body .fa-quote-right {
-  color: #eee;
-  font-size: 40px;
-  float: right;
-}
+  .testimonial-col img {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+  }
 
-.testimonial-footer {
-  background-color: #686de0;
-  color: #fff;
-  padding: 40px;
-  text-align: center;
-}
+  .testimonial-col p {
+    padding: 0;
+  }
 
-.testimonial-footer img {
-  border-radius: 50%;
-  border: 5px solid #fff;
-  height: 120px;
-  width: 120px;
-  margin-top: -100px;
-}
+  .testimonial-col h3 {
+    margin-top: 15px;
+    text-align: left;
+  }
 
-.testimonial-footer h3 {
-  margin: 10px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
+  .testimonial-col .fa {
+    color: gold;
+  }
 
-.testimonial-footer h4 {
-  color: #b3b5ef;
-  margin: 0;
-  letter-spacing: 1px;
-}
+  @media(max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
 
 
 /* application form */
@@ -371,4 +382,131 @@ optgroup,
 
 .whatwedo p{
   font-size: 15px;
+}
+
+/* .course-container-card{
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+} */
+
+.ourcourse-card{
+  display: flex;
+  justify-content: space-around;
+}
+
+.course-container-card h1 {
+  text-align: center;
+
+}
+
+.course-card{
+  width: 300px;
+  background: #c0d2d4;
+  border: 1px solid black;
+}
+
+
+/* payment */
+
+.page-off{
+  display: none;
+}
+.card-page-off{
+  display: none;
+}
+
+.Payment-page{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.radio-btn{
+  display: inline;
+}
+
+
+.col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+   padding: 0 16px;
+}
+
+.fa{
+  padding-left: 10px;
+}
+
+.fa-cc-visa{
+  color:navy;
+}
+
+.fa-cc-amex{
+  color: blue;
+}
+
+.fa-cc-mastercard{
+  color: red;
+}
+
+.fa-cc-discover{
+  color: orange;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .Payment-page {
+    display: block;
+  }
+
+  .payers-details{
+    text-align: center;
+  }
+
 }
