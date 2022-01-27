@@ -7,6 +7,7 @@ import ourCoursesDic from './ourcoursesdic';
 const showCourse =(show)=>{
   return <OurCourses
   key={show.courseTitle}
+  courseImg={show.courseImg}
   courseTitle={show.courseTitle} 
   courseDesc={show.courseDesc} />
 

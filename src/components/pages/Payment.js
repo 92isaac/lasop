@@ -5,6 +5,7 @@ import UssdPayment from '../UssdPayment';
 
 
 const Payment = () => {
+  
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const Close = () => setClick(true);
@@ -42,7 +43,7 @@ const Payment = () => {
           </div>
     </div >
     <div >
-      
+
       <div className={!click ? 'page-off' : ''} onClick={()=>Close()}>
       <UssdPayment/>
       </div>

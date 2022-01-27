@@ -5,7 +5,8 @@ import Duration from "../Duration"
 import WhatWeDo from '../WhatWeDo';
 import Courses from '../Courses';
 import Testimonial from '../Testimonial';
-import Payment from './Payment';
+import Newsletter from '../Newsletter';
+import Footer from '../Footer';
 
 const Home = () => {
   return <> 
@@ -15,7 +16,8 @@ const Home = () => {
   <Testimonial/>
   <WhatWeDo/>
   <Courses/>
-  {/* <Payment/> */}
+  <Newsletter/>
+  <Footer/>
     </>;
 };
 

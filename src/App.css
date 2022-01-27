@@ -207,10 +207,28 @@
 
 .duration-text{
   margin-top: 20px;
+  padding: 50px;
   text-align: center;
 }
 
+.duration-text h3{
+  margin-bottom: 40px;
+}
+
+figure img{
+  width: 500px;
+  float: left;
+  margin: 25px;
+}
+
+figcaption{
+  text-align: justify;
+  font-size: 20px;
+}
+
 .duration-text button{
+  margin-top: 20px;
+  clear: right;
   background: rgb(241, 123, 123);
   padding: 10px 80px;
   border: none;
@@ -384,14 +402,13 @@ optgroup,
   font-size: 15px;
 }
 
-/* .course-container-card{
-  display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-} */
+.courses-container{
+  padding: 50px 10px 30px 10px;
+}
 
 .ourcourse-card{
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .course-container-card h1 {
@@ -400,11 +417,35 @@ optgroup,
 }
 
 .course-card{
-  width: 300px;
+  width: 380px;
   background: #c0d2d4;
   border: 1px solid black;
+  padding-bottom: 20px;
+  margin: 20px;
+
 }
 
+.course-card img{
+  width: 300px;
+  height: 320px;
+}
+
+.course-card img:hover{
+  width: 380px
+}
+
+.course-card h2{
+  font-size: 20px;
+  padding: 10px 5px 5px 5px;
+  text-align: center;
+}
+
+.course-card p,
+.course-card a {
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+}
 
 /* payment */
 
@@ -463,7 +504,7 @@ optgroup,
 input[type=text] {
   width: 100%;
   margin-bottom: 10px;
-  padding: 8px;
+  padding: 2px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
@@ -495,7 +536,6 @@ label {
 }
 
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .row {
     flex-direction: column-reverse;
@@ -509,4 +549,88 @@ label {
     text-align: center;
   }
 
+}
+
+.subscribe{
+  background: linear-gradient(rgba(163, 181, 252, 0.7), rgba(129, 129, 131, 0.7)),
+  url(./assets/3.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  text-align: center;
+}
+
+.subscribe input{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.subscribe button{
+  border: none;
+  padding: 5px 35px;
+
+}
+
+.subscribe button:hover{
+  background: #03e9f4;
+  color: #000 ;
+  border-radius: 20px;
+}
+
+footer{
+    background: #000;
+    opacity: 90%;
+
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 60px 0 60px;
+}
+
+.footerservice a,
+.footerlinks a{
+  font-size: 13px;
+  padding-left: 0;
+  color: #fff;
+}
+
+.footerservice .fa-greater-than,
+.footerlinks .fa-greater-than {
+  padding: 0 10px;
+  color: grey;
+}
+
+.footer-copyright{
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.footer-copyright h6{
+  display: inline;
+}
+
+.fa-twitter {
+  color: #3838fc;
+  padding-left: 20px;
+}
+.fa-facebook {
+  color: #2a2af8;
+  padding-left: 20px;
+}
+ .fa-linkedin{
+  color: #7373f5;
+  padding-left: 20px;
+}
+.fa-instagram{
+  color: #f19c1c;
+  padding-left: 20px;
 }
