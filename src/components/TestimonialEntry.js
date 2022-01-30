@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TestimonialEntry = (props) => {
-  return <div>
+  return <div className="row-container">
         <div className="testimonial-col">
       <img src={props.imgs} alt="user1 "/>
       <div>

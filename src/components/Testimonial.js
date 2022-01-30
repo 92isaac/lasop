@@ -15,14 +15,13 @@ const testMap=(testi)=>{
 
 
 const Testimonial = () => {
-  return <section className="testimonial">
+  return <div className="testimonial">
   <h1>What Our Student Says</h1>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
   <div className="row">
      {testimonialfiles.map(testMap)}
     </div>
-</section>;
+</div>;
 };
 
 export default Testimonial;
