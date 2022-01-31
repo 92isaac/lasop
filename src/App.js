@@ -5,6 +5,9 @@ import NavbarR from "./components/NavbarR";
 import Home from "./components/pages/Home";
 import Apply from "./components/pages/Apply";
 import Payment from './components/pages/Payment'
+import AboutUs from './components/pages/AboutUs'
+import ContactUs from './components/pages/ContactUs'
+import FAQ from './components/pages/FAQ'
 
 function App() {
   return ( <Router>
@@ -14,6 +17,10 @@ function App() {
     <Route path="/" element={ <Home/> } />
     <Route path="/Apply" element={ <Apply/> } />
     <Route path="/Payment" element={ <Payment/> } />
+    <Route path="/AboutUs" element={ <AboutUs/> } />
+    {/* <Route path="/Courses" element={ <Courses/> } /> */}
+    <Route path="/ContactUs" element={ <ContactUs/> } />
+    <Route path="/FAQ" element={ <FAQ/> } />
 
   </Routes>
   </Router>

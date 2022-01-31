@@ -655,3 +655,63 @@ footer{
   color: #f19c1c;
   padding-left: 20px;
 }
+
+.trye img{
+  width: 300px;
+}
+
+.contactus-text{
+  text-align: center;
+}
+
+.contactus-container{
+  margin: 0 60px;
+}
+
+.contactus-card-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.contactus-card{
+  /* border: 1px solid red; */
+  padding: 10px 30px;
+  width: 250px;
+   /* box-shadow: 14px 14px 20px #cbced1,
+   -14px -14px 20px white; */
+   box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.contactus-card img{
+  width: 50px;
+}
+.contactus-map{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.mu-contact-right iframe {
+  height: 300px;
+  border: 2px;
+  width: 700px;
+}
+
+.faq-body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-body{
+  margin: 50px 50px;
+}
+
+.faq-img img{
+  width: 500px;
+}
+
+.faq-container h4{
+  text-align: center;
+}
