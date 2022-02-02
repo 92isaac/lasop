@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import View from '../assets/2.jpg'
+import ApplyBtn from './ApplyBtn';
 
 
 const Duration = () => {
@@ -13,7 +13,7 @@ const Duration = () => {
 
       At LASOP, we hire only industry experts with at least 7years of industrial working experience. This is to ensure that our students get best of all knowledge, skills and experience needed to work in high tech companies and be sustained. Our state of the art facilities stationed in a conducive environment are second to none.</figcaption>
 </figure>
-<button><NavLink to="/Apply"> Apply now </NavLink></button>
+        <ApplyBtn/>
   </div>;
 };
 

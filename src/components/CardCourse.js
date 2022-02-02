@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const OurCourses = (props) => {
+const CardCourse = (props) => {
   return <div className="course-card">
         <img src={props.courseImg} alt="frontend" />
         <h2>{props.courseTitle}</h2>
@@ -11,4 +11,4 @@ const OurCourses = (props) => {
   </div>;
 };
 
-export default OurCourses;
+export default CardCourse;

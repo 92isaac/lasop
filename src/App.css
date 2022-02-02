@@ -18,6 +18,26 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 460px) {
+
+ .first-navbar {
+   height: 20px;
+ }
+
+  .first-navbar a{
+    font-size: 10px;
+  }
+
+ .me-auto {
+   text-align: center;
+   padding-bottom: 35px;
+   font-style: italic;
+   font-weight: 700;
+ }
+}
+
+
+/* second navbar */
 .navbar {
   background-color: #fff;
   height: 60px;
@@ -49,7 +69,7 @@
 }
 
 .nav-logo{
-    color: #fc1f1f;
+    /* color: #fc1f1f; */
   align-items: center;
   margin-left: 20px;
   cursor: pointer;
@@ -105,6 +125,24 @@
 .nav-icon {
   display: none;
 }
+
+@media screen and (max-width: 460px) {
+
+  .nav-logo {
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 60px;
+    flex-grow: 1;
+    padding-bottom: 10px;
+  }
+
+  .fa-times, .fa-bars {
+    margin-top: 0px;
+  }
+
+}
+
 
 @media screen and (max-width: 960px) {
 
@@ -211,6 +249,21 @@
   padding: 14px auto;
 
 }
+
+@media screen and (max-width: 460px) {
+
+  .goals-play {
+    display: block;
+  }
+}
+
+/* @media screen and (max-width: 960px) {
+
+  .goals-play {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+} */
 
 .duration-text{
   margin: 20px 60px 0 60px;
@@ -327,7 +380,7 @@ figcaption::first-letter{
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 81vh;
+  min-height: 81vh;
   display: flex;
   text-align: center;
   place-items: center;
@@ -357,6 +410,17 @@ optgroup {
     border-radius: 50px;
     box-shadow: inset 6px 6px 6px #cbced1,
     inset -6px -6px 6px white;
+}
+
+.application-container span{
+  font-size: 12px;
+  color: red;
+  font-style: italic;
+  display: none;
+}
+
+input:invalid[focus="true"] ~ span{
+  display: block;
 }
 
 
@@ -407,10 +471,18 @@ optgroup,
 }
 
 .whatwedo-bg{
-      border-radius: 20px;
-      width: 400px;
+  display: flex;
+  justify-content: space-between;
       padding: 40px;
       background: #fff;
+}
+
+.whatwedo{
+      border-radius: 20px;
+      padding: 40px;
+   box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
+
+
 }
 
 .whatwedo h1{
@@ -709,9 +781,144 @@ footer{
 }
 
 .faq-img img{
+  /* padding-left: 50px; */
   width: 500px;
 }
 
 .faq-container h4{
   text-align: center;
+}
+
+.ourcoursespage-container h4{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.ourcoursespage-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourcoursespage-btn button a{
+  color: #fff;
+}
+
+.frontend{
+  padding: 10px 50px;
+}
+
+/* .frontend-header{
+  display: block;
+} */
+
+.frontend-header-img{
+  margin: 0;
+  padding: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+}
+
+.frontend h4{
+ text-align: center;
+}
+
+.course-modules-container{
+  margin: 40px 40px;
+}
+
+.course-modules-container h4{
+  text-align: center;
+  font-weight: 600;
+}
+
+.course-modules{
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  justify-content: space-between;
+}
+
+.course-modules h5{
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.apply-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.apply-btn button{
+  border: none;
+  background: #3838fc;
+  padding: 5px 30px;
+}
+
+.apply-btn button a{
+  text-decoration: none;
+  color: #cbced1;
+}
+
+.full-stack{
+  padding: 50px 10px;
+  margin: 0;
+}
+
+.full-stack-header h4,
+.full-stack-header p{
+  text-align: center;
+  margin: 0 50px;
+}
+
+.full-stack h4{
+  padding-bottom: 10px;
+}
+
+.full-stack-exptn{
+  margin: 30px 40px;
+}
+
+.exptn-grid{
+  padding: 5px;
+  margin: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  justify-content: space-between;
+
+}
+
+.exptn-grid-card{
+  margin: 20px;
+  padding: 10px 0;
+  box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
+  background: #f5e6d0;
+}
+
+.exptn-grid-card h6 a{
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+.about-us-header h3{
+  text-align: center;
+}
+
+.about-us{
+  background-image: linear-gradient(to bottom, rgba(252, 252, 255, 0.52), rgba(255, 254, 255, 0.73)),
+  url('./assets/logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

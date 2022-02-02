@@ -1,6 +1,6 @@
 import React from 'react';
-import OurCourses from './OurCourses';
-import ourCoursesDic from './ourcoursesdic';
+import OurCourses from './CardCourse';
+import ourCoursesDic from './cardcoursedic';
 
 
 
@@ -13,7 +13,7 @@ const showCourse =(show)=>{
 
 }
 
-const Courses = () => {
+const Card = () => {
   return <div className='courses-container'>
     <div className="course-container-card">
         <h1>Courses We Offer</h1>
@@ -24,4 +24,4 @@ const Courses = () => {
   </div>;
 };
 
-export default Courses;
+export default Card;

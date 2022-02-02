@@ -15,13 +15,15 @@ const testMap=(testi)=>{
 
 
 const Testimonial = () => {
-  return <div className="testimonial">
-  <h1>What Our Student Says</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-  <div className="row">
-     {testimonialfiles.map(testMap)}
-    </div>
-</div>;
+   return <div classNameName="testimonial">
+      <h1>What Our Student Says</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+   <div classNameName="row">
+      {testimonialfiles.map(testMap)}
+     </div>
+ </div>; 
 };
 
 export default Testimonial;
+
+

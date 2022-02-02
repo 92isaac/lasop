@@ -35,7 +35,7 @@ const [click, setClick] = useState(false);
             <li className="nav-item">
               <NavLink
               
-                to="/blog"
+                to="/Course"
                 className={({ isActive }) => (isActive ? 'active nav-links' : 'nav-links')}
                 onClick={click ? handleClick : null}
               >

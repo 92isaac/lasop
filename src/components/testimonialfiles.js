@@ -3,6 +3,7 @@ import AvatarImg from '../assets/Second.jpg'
 
 const testimonialfiles = [
   {
+    data: '0',
  imgs: AvatarImg,
   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt dignissimos qui veritatis iste asperiores!",
   name: 'Shuaib David',
@@ -10,6 +11,7 @@ const testimonialfiles = [
   halfstar:"fa fa-star-o",
   },
   {
+    data: '1',
  imgs: AvatarImg,
   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt dignissimos qui veritatis iste asperiores!",
   name: 'Christine Berkley',

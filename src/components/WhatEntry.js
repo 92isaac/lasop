@@ -1,21 +1,13 @@
 import React from 'react';
-import WhatWeDo from './WhatWeDo';
-import whatwedodic from './whatwedodic'
+import { NavLink } from 'react-bootstrap'
 
-const whatWedoList =(whatwedomap)=>{
-  return (<WhatWeDo 
-    // key={whatwedomap.title}
-    // whatHeader= {whatwedomap.title}
-    // whatDescription= {whatwedomap.description}
-        />
-        
-    // <WhatWeDo/>
 
-  )}
 
-const WhatEntry = () => {
-  return <div>
-    {whatwedodic.map(whatWedoList)}
+const WhatEntry = (props) => {
+  return <div className="whatwedo">
+      <h1>{props.whatHeader}</h1>
+      <p>{props.whatDescription}</p>
+      <NavLink to={props.link}>read more</NavLink>
   </div>;
 };
 
