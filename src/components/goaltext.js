@@ -1,6 +1,6 @@
 const goalText = [
   {goalTitle: 'We Train',
-  goalDescription: 'At LASOP, we provide high quality training to equip our students with industry – recongnised IT skills and knowledge quality companies are looking for.',
+  goalDescription: 'We provide high quality training to equip our students with industry recongnised IT skills and knowledge quality companies are looking for.',
   },
   {goalTitle: 'Mentorship',
   goalDescription: 'You are assigned to a professional who reviews your codes and helps when you get stuck ',
