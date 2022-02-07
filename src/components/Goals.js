@@ -11,8 +11,13 @@ const createGoals =(goals)=>{
 }
 
 const Goals = () => {
-  return <div className='goals-play'>
+  return <div className="goalheader">
+    <h2>At lagos School of Programming, </h2>
+    <p>We:</p>
+ <div
+   className='goals-play'>
     {goalText.map(createGoals)}
+  </div>
   </div>;
 };
 

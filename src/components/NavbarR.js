@@ -22,29 +22,20 @@ const [click, setClick] = useState(false);
               
                 to="/"
                 className={({ isActive }) => (isActive ? 'active nav-links' : 'nav-links')}
-                // activeClassName="active"
-                // className="nav-links"
                 onClick={click ? handleClick : null}
               >
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-              
-                to="/about"
-                className={({ isActive }) => (isActive ? 'active nav-links' : 'nav-links')}
-                // activeClassName="active"
-                // className="nav-links"
-                onClick={click ? handleClick : null}
-              >
+              <NavLink to="/AboutUs" className={({ isActive }) => (isActive ? 'active nav-links' : 'nav-links')} onClick={click ? handleClick : null}>
                 About
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
               
-                to="/blog"
+                to="/Course"
                 className={({ isActive }) => (isActive ? 'active nav-links' : 'nav-links')}
                 onClick={click ? handleClick : null}
               >
@@ -54,7 +45,7 @@ const [click, setClick] = useState(false);
             <li className="nav-item">
               <NavLink
               
-                to="/contact"
+                to="/ContactUs"
                 className={({ isActive }) => (isActive ? 'active nav-links' : 'nav-links')}
                onClick={click ? handleClick : null}
               >
@@ -64,7 +55,7 @@ const [click, setClick] = useState(false);
             <li className="nav-item">
               <NavLink
               
-                to="/contact"
+                to="/FAQ"
                 className={({ isActive }) => (isActive ? 'active nav-links' : 'nav-links')}
                onClick={click ? handleClick : null}
               >
