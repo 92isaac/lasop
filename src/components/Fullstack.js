@@ -11,38 +11,43 @@ const Fullstack = () => {
       </div>
       <div className="full-stack-exptn">
         <h5>What To Expect At The End Of This Program</h5>
-        <div className="exptn-grid">
-          <div className="exptn-grid-card">
+        <div>
+          <div className='container m-5'>
+          <div className="row exptn-grid">
+          <div className="col-lg-4 col-md-6 col-sm-12 exptn-grid-card">
             <h6><Link to="/Frontend">Frontend Development</Link></h6>
         <hr/>
 
             <p>Produce dynamic, interactive websites using HTML,CSS and JAVASCRIPT.</p>
           </div>
-          <div className="exptn-grid-card">
+          {/* <div className='row'> */}
+          <div className="col-lg-4 col-md-6 col-sm-12 exptn-grid-card">
             <h6><Link to="/Backend">Backend Development</Link></h6>
         <hr/>
 
             <p>Program server side applications and RESTful web APIS Express,ASP.NET or Spring.</p>
           </div>
-          <div className="exptn-grid-card">
+          <div className="col-lg-4 col-md-6 col-sm-12 exptn-grid-card">
             <h6><Link to="/Frontend">Responsive Design</Link></h6>
         <hr/>
 
             <p>Design and properly structure a website that is responsive in all devices.</p>
           </div>
-          <div className="exptn-grid-card">
+          <div className="col-lg-4 col-md-6 col-sm-12 exptn-grid-card">
             <h6><Link to="/Frontend">Programming Foundation</Link></h6>
         <hr/>
 
             <p>Gain core knowledge in javasript.</p>
           </div>
-          <div className="exptn-grid-card">
+          <div className="col-lg-4 col-md-6 col-sm-12 exptn-grid-card">
             <h6><Link to="/Frontend">Database Developmen</Link></h6>
         <hr/>
 
             <p>Learn MySQL to design tables and collection</p>
           </div>
-
+          {/* </div> */}
+          </div>
+        </div>
         </div>
 
       {/* </div> */}

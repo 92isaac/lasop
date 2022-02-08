@@ -3,6 +3,7 @@ import contactUs from '../contactUsList'
 import ContactUsEntry from '../ContactUsEntry'
 import FooterSendMsg from '../FooterSendMsg';
 import IframeHolder from '../IframeHolder';
+import {Row, Col} from 'react-bootstrap'
 
 
 const ContactMap =(contactpedia)=>{
@@ -23,12 +24,18 @@ const ContactUs = (props) => {
       <h3>Contact Us</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
-    <div className="contactus-card-container">
+    <div className=" contactus-card-container">
       {contactUs.map(ContactMap)}
     </div>
-    <div className="contactus-map">
+    <div className="container-fluid contactus-map">
+      <Row>
+        <Col lg={8}  md={12}  sm={12}>
        <IframeHolder/>
+        </Col>
+        <Col lg={4}  md={12}  sm={12} >
       <FooterSendMsg/>
+        </Col>
+      </Row>
       </div> 
     </div>;
 };

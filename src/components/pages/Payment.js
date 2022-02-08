@@ -4,11 +4,13 @@ import UssdPayment from '../UssdPayment';
 // import {CourseContext} from '../ChoseCourse'
 
 
+// const check = ( isActive ) => {isActive ? 'page-off' : ''}
+
+
 const Payment = () => {
   
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const Close = () => setClick(true);
+  const handleClick = () => setClick(click);
 
   return ( <div className='Payment-page'>
     <div>
@@ -30,12 +32,12 @@ const Payment = () => {
 
     <div>
         <div class="custom-control custom-radio">
-      <input type="radio" name="customRadio" className={({ isActive }) => (isActive ? 'page-off' : 'card-page-off')} onClick={ handleClick}/>
+      <input type="radio" name="customRadio" onClick={ handleClick}/>
       <label class="form-check-label" for="customRadio1">USSD</label>
         </div>
 
       <div class="custom-control custom-radio">
-  <input type="radio" name="customRadio" class="form-check-input" onClick={ handleClick}/>
+  <input type="radio" name="customRadio"  onClick={ handleClick}/>
   <label class="form-check-label" for="customRadio2">Card payment</label>
 
 </div>
@@ -44,13 +46,14 @@ const Payment = () => {
     </div >
     <div >
 
-      <div className={!click ? 'page-off' : ''} onClick={()=>Close()}>
+
+       <div className={({ isActive }) => (isActive ? 'page-off ' : 'card-page-off ')} >
       <UssdPayment/>
       </div>
 
-      <div className={!click ? 'page-off' : ''} onClick={()=>Close()}>
+      <div className={({ isActive }) => (isActive ? 'page-off ' : 'card-page-off ')} >
        <CardPaymentPage/>
-      </div>
+      </div> 
 
     </div>
   </div>)

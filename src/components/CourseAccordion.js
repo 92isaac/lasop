@@ -20,11 +20,11 @@ const courseList=(cList)=>{
 
 
 const CourseAccordion = () => {
-  return <>
- <Accordion className="w-50">
+  return <div className="container-fluid">
+ <Accordion className="w-70">
       {courselist.map(courseList)}
       </Accordion>
-  </>;
+  </div>;
 };
 
 export default CourseAccordion;

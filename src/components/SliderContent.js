@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from 'react-router-dom'
 
 function SliderContent({ activeIndex, sliderImage }) {
   return (
@@ -9,9 +10,10 @@ function SliderContent({ activeIndex, sliderImage }) {
           className={index === activeIndex ? "slides active" : "inactive"}
         >
           <img className="slide-image" src={slide.urls} alt="" />
-          <p>{slide.header}</p>
+          <p className="slide-header">{slide.header}</p>
           <h2 className="slide-title">{slide.title}</h2>
           <h3 className="slide-text">{slide.description}</h3>
+          <div><NavLink to="/Apply" className="slide-link" >Apply Now</NavLink></div>
         </div>
       ))}
     </section>

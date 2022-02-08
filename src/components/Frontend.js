@@ -5,8 +5,8 @@ import ApplyBtn from './ApplyBtn'
 import Footer from './Footer'
 
 const Frontend = () => {
-  return <div>
-  <div className="frontend">
+  return <div >
+  <div className="container-fluid frontend">
     <h4>Frontend Development</h4>
     <div className="frontend-header">
 
@@ -17,17 +17,17 @@ The objective of designing a site is to ensure that when the users open up the s
 </p>
 <div className="frontend-header-img">
   <div className="header-img">
-<img src={FrontendImg} alt="frontendIllustration"/>
+<img src={FrontendImg} className="img-fluid img-thumbnail" alt="frontendIllustration"/>
   </div>
 
 <br/>
 <Link to="https://www.upwork.com/hiring/development/front-end-developer">Image source: www.upwork.com/hiring/development/front-end-developer</Link>
 </div>
     </div>
-      <div className="course-modules-container">
+      <div className="container course-modules-container">
         <h4>Course Modules</h4>
-      <div className="course-modules">
-  <div>
+      <div className="row course-modules">
+  <div className="col-lg-6 col-sm-12">
   <h5>Module 1 - HTML</h5>
   <hr/>
   <p>HyperText Markup Language, commonly referred to as HTML, is the standard markup language used to create web pages. Web browsers can read HTML files and render them into visible or audible web pages. HTML describes the structure of a website semantically along with cues for presentation, making it a markup language, rather than a programming language.
@@ -44,7 +44,7 @@ The objective of designing a site is to ensure that when the users open up the s
 	<li>Images , Table</li>
   </ol>
 </div>
-<div>
+<div className="col-lg-6 col-sm-12">
   <h5>Module 2 - CSS</h5>
   <hr/>
   <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications. In this module, you will learn</p>
@@ -61,7 +61,7 @@ The objective of designing a site is to ensure that when the users open up the s
   </ol>
 </div>
         
-<div>
+<div className="col-lg-6 col-sm-12">
   <h5>Module 3 - Javascript</h5>
   <hr/>
   <p>JavaScript is a high level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production; the majority of websites employ it and it is supported by all modern web browsers without plug-ins. JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented, imperative, and functional programming styles. It has an API for working with text, arrays, dates and regular expressions, but does not include any I/O, such as networking, storage or graphics facilities, relying for these upon the host environment in which it is embedded. This language is indispensable. In this section you will learn the following topics</p>
@@ -82,7 +82,7 @@ The objective of designing a site is to ensure that when the users open up the s
   </ol>
 </div>
 
-<div>
+<div className="col-lg-6 col-sm-12">
   <h5>Module 4 - ReactJS</h5>
   <hr/>
   <p>ReactJS is the best and most popular framework for frontend development. An integral part of the MERN Stack, its community is great, and the demand for react js specialists is only increasing day by day. React is great for Rapid app development, SPAs and for creating awesome responsive and interactive web apps. In this topic you will learn:</p>

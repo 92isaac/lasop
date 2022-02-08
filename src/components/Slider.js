@@ -18,7 +18,7 @@ function Slider(props) {
   }, [activeIndex]);
 
   return (
-    <div className="slider-container">
+    <div className="container-fluid slider-container">
       <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
       <Arrows
         prevSlide={() =>

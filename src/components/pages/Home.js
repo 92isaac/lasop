@@ -3,7 +3,6 @@ import Goals from "../Goals";
 import Slider from "../Slider";
 import Duration from "../Duration"
 import WhatWeDo from '../WhatWeDo';
-import Courses from '../Card';
 import Course from './Course';
 import TestimonialCarousel from '../TestimonialCarousel';
 import Newsletter from '../Newsletter';

@@ -17,13 +17,13 @@ const fQuestion=(fquest)=>{
 const FAQ = () => {
   return <div className="faq-container">
     <h4>Frequently Asked Questions</h4>
-  <div className='faq-body'>
-    <Accordion className="w-50">
-      {faquestion.map(fQuestion)}
-      </Accordion>
-      <div className='faq-img'>
+  <div className='row faq-body'>
+      <div className='col-lg-6 col-md-12 faq-img'>
       <img src={FaqImg} alt="faq"/>
       </div>
+    <Accordion className="col-lg-6 col-md-12 accordion">
+      {faquestion.map(fQuestion)}
+      </Accordion>
   </div>
 
   <Footer/>

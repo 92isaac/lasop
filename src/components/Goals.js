@@ -11,11 +11,11 @@ const createGoals =(goals)=>{
 }
 
 const Goals = () => {
-  return <div className="goalheader">
+  return <div className="container-fluid goalheader">
     <h2>At lagos School of Programming, </h2>
     <p>We:</p>
  <div
-   className='goals-play'>
+   className='row goals-play'>
     {goalText.map(createGoals)}
   </div>
   </div>;

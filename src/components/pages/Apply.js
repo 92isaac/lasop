@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom'
 import ChoseCourse from '../ChoseCourse';
+import Lecturetime from '../Lecturetime';
 import ModeOfStudy from '../ModeOfStudy';
 
 
@@ -47,7 +48,10 @@ const Apply = () => {
     <span>input a valid phone number</span>
 
     <ChoseCourse/>
-    <ModeOfStudy/>
+    <br/>
+    {/* <ModeOfStudy/>
+    <br/> */}
+    <Lecturetime/>
     <br/>
     	<button className="application-button" type='submit'>Submit</button>
   </form>

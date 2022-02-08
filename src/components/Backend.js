@@ -6,7 +6,7 @@ import Footer from './Footer'
 const Backend = () => {
   return <div>
 
-  <div className="backend">
+  <div className="container-fluid backend">
     <h4>Backend Development</h4>
     <div className="backend-header">
 
@@ -18,18 +18,18 @@ const Backend = () => {
     </p>
 <div className="backend-header-img">
   <div className="header-img">
-<img src={BackendImg} alt="frontendIllustration"/>
+<img src={BackendImg} className="img-fluid img-thumbnail" alt="frontendIllustration"/>
   </div>
 
 <br/>
       <Link to="https://www.guru99.com/images/1/091318_0717_WhatisBacke1.png">guru99</Link>
 </div>
     </div>
-      <div className="course-modules-container">
+      <div className="container course-modules-container">
         <h4>Course Modules</h4>
         <h5>Course Modules for Python Backend</h5>
-      <div className="course-modules">
-  <div>
+      <div className="row course-modules">
+  <div className="col-lg-6 col-sm-12">
   <h5>Python</h5>
   <hr/>
   <p>Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects. it is a high-in-demand language. It is very easy to learn because of its syntax. In this module, you will learn:: <br/>
@@ -60,7 +60,7 @@ const Backend = () => {
 	<li>Name and Main</li>
   </ol>
 </div>
-<div>
+<div className="col-lg-6 col-sm-12">
   <h5>DJANGO</h5>
   <hr/>
   <p>Django is a Python-based free and open-source web framework that follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an independent organization established in the US as a 501 non-profit. 
@@ -95,11 +95,11 @@ const Backend = () => {
 </div>
 </div>
 
-  <div className="course-modules-container">
+  <div className="container course-modules-container">
         <h5>Course Modules for Javascript Backend</h5>
-      <div className="course-modules">
-  <div>
-  <h5>Javascript</h5>
+      <div className="row course-modules">
+  <div className="col-lg-6 col-sm-12">
+  <h5 >Javascript</h5>
   <hr/>
   <p>JavaScript is a high level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production; the majority of websites employ it and it is supported by all modern web browsers without plug-ins. JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented, imperative, and functional programming styles. It has an API for working with text, arrays, dates and regular expressions, but does not include any I/O, such as networking, storage or graphics facilities, relying for these upon the host environment in which it is embedded. This language is indispensable. In this section you will learn the following topics
   </p>
@@ -119,7 +119,7 @@ const Backend = () => {
 	<li>Functions</li>
   </ol>
 </div>
-<div>
+<div className="col-lg-6 col-sm-12">
   <h5>Nodejs</h5>
   <hr/>
   <p>Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
@@ -140,7 +140,7 @@ A Node.js app runs in a single process, without creating a new thread for every 
 </div>
 
 
-<div>
+<div className="col-lg-6 col-sm-12">
   <h5>MongoDB</h5>
   <hr/>
   <p>MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. It is a data driven schema less NoSql database. It is a great tool to know. The syntax is very similar to javascript making it much easier to learn. You can use it &nbsp;for projects of any size and also very easy to scale up or down depending on your requirement. In this module, you will learn:</p>
