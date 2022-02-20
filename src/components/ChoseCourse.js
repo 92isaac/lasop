@@ -6,16 +6,16 @@ export const CourseContext = React.createContext()
 
 
 const ChoseCourse = () => {
-  const [usersData, setUsersData]=useState({course:""})
-
+  // const [usersData, setUsersData]=useState({course:""})
+  const [course, setCourse]=useState("")
   return <div>
-    <CourseContext.Provider value={usersData.course}>
+    <CourseContext.Provider value={course}>
 
     <label for="Course">Course:</label>
-    <select name="Course" id="Course-select" placeholder="Course" value={usersData.course} onChange={e=> setUsersData({course:e.target.value})} >
+    <select name="Course" id="Course-select" placeholder="Course" value={course} onChange={e=> setCourse(e.target.value)} >
     <option>Frontend Development</option>
-    <option value={usersData.course} onChange={e=> setUsersData({course:e.target.value})}>Backend Development</option>
-    <option >Fullstack Developement</option>
+    <option>Backend Development</option>
+    <option value={course} onChange={e=> setCourse(e.target.value)} >Fullstack Developement</option>
     <option >UI/UX Course</option>
     <option >Android App Development(IOS and HIOS)</option>
     </select>

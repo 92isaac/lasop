@@ -3,7 +3,7 @@ import Second from "../assets/2.jpg";
 import Third from "../assets/3.jpg";
 import Fourth from "../assets/4.jpg";
 
-export default [
+const SliderImage = [
   {
     header:'Lagos School of Programming',
     title: "Launch Your Career in Tech",
@@ -29,3 +29,5 @@ export default [
     urls: Fourth,
   },
 ];
+
+export default SliderImage

@@ -1,0 +1,59 @@
+{
+  "messages": [
+    {
+      "name": "Wabjay",
+      "email": "Omoniyi@gmail.com",
+      "subject": "Topic",
+      "message": "Tester test",
+      "id": 1
+    },
+    {
+      "name": "Wabjay",
+      "email": "Omoniyi@gmail.com",
+      "subject": "Topic",
+      "message": "Tester test",
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ],
+  "course": [
+    {
+      "id": 1,
+      "fName": "Niyi",
+      "oName": "Ola",
+      "lName": "Omo",
+      "email": "omoniyi@g.com",
+      "address": "Adams Kadri street",
+      "tell": "+23463547484",
+      "course": "Backend Development",
+      "modeOfStudy": "Weekdays",
+      "timeOfStudy": "Evening"
+    },
+    {
+      "id": 2,
+      "fName": "Niyi",
+      "oName": "Ola",
+      "lName": "Omo",
+      "email": "omoniyi@g.com",
+      "address": "Adams Kadri street",
+      "tell": "+23463547484",
+      "course": "Frontend Development",
+      "modeOfStudy": "Weekend",
+      "timeOfStudy": "Morning"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    }
+  ]
+}
