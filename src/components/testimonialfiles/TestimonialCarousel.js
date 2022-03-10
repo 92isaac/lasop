@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Testimonial.css";
-import View1 from '../assets/1.jpg';
-import View2 from '../assets/2.jpg';
-import View3 from '../assets/3.jpg';
+import View1 from '../../assets/1.jpg';
+import View2 from '../../assets/2.jpg';
+import View3 from '../../assets/3.jpg';
 
 
 const TestimonialCarousel = () => {

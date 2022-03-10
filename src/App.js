@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 // import './AppQuery460.css'
 // import './AppQuery960.css'
-import NavbarF from "./components/NavbarF";
-import NavbarR from "./components/NavbarR";
+import NavbarF from "./components/navbarfiles/NavbarF";
+import NavbarR from "./components/navbarfiles/NavbarR";
 import Home from "./components/pages/Home";
 import Apply from "./components/pages/Apply";
 import Payment from './components/pages/Payment'
@@ -11,9 +11,9 @@ import AboutUs from './components/pages/AboutUs'
 import Course from './components/pages/Course'
 import ContactUs from './components/pages/ContactUs'
 import FAQ from './components/pages/FAQ'
-import Frontend from './components/Frontend'
-import Backend from './components/Backend'
-import Fullstack from './components/Fullstack'
+import Frontend from './components/coursefiles/Frontend'
+import Backend from './components/coursefiles/Backend'
+import Fullstack from './components/coursefiles/Fullstack'
 
 function App() {
   return ( <Router>

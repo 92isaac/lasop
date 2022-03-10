@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from '../Footer';
-import Goals from '../Goals';
+import Footer from '../footerfiles/Footer';
+import Goals from '../ourgoalsfiles/Goals';
 
 const AboutUs = () => {
   return <div className='about-us'>

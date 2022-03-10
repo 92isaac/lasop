@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FrontendImg from '../assets/Frontend Img.png'
-import ApplyBtn from './ApplyBtn'
-import Footer from './Footer'
+import FrontendImg from '../../assets/Frontend Img.png'
+import ApplyBtn from '../commonfiles/ApplyBtn'
+import Footer from '../footerfiles/Footer'
 
 const Frontend = () => {
   return <div >

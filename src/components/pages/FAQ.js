@@ -1,9 +1,9 @@
 import React from 'react';
 import {Accordion} from 'react-bootstrap'
-import FaqEntry from '../FaqEntry';
-import faquestion from '../faquestions'
+import FaqEntry from '../faqfiles/FaqEntry';
+import faquestion from '../faqfiles/faquestions'
 import FaqImg from '../../assets/faq 1.png'
-import Footer from '../Footer'
+import Footer from '../footerfiles/Footer'
 
 const fQuestion=(fquest)=>{
   return <FaqEntry 

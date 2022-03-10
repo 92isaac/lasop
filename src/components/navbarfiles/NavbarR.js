@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../assets/logo.png'
+import Logo from '../../assets/logo.png'
 
 const NavbarR = () => {
 const [click, setClick] = useState(false);

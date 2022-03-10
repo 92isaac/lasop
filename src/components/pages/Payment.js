@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import CardPaymentPage from '../CardPaymentPage';
-import UssdPayment from '../UssdPayment';
+import CardPaymentPage from '../formandpaymentfiles/CardPaymentPage';
+import UssdPayment from '../formandpaymentfiles/UssdPayment';
 // import {CourseContext} from '../ChoseCourse'
 
 

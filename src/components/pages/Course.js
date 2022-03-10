@@ -1,6 +1,6 @@
 import React from 'react';
 import FaqImg from '../../assets/logo.png'
-import CourseAccordion from '../CourseAccordion';
+import CourseAccordion from '../coursefiles/CourseAccordion';
 import { Col } from 'react-bootstrap'
 
 

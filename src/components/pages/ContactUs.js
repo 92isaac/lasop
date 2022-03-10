@@ -1,8 +1,8 @@
 import React from 'react';
-import contactUs from '../contactUsList'
-import ContactUsEntry from '../ContactUsEntry'
-import FooterSendMsg from '../FooterSendMsg';
-import IframeHolder from '../IframeHolder';
+import contactUs from '../contactusfiles/contactUsList'
+import ContactUsEntry from '../contactusfiles/ContactUsEntry'
+import FooterSendMsg from '../footerfiles/FooterSendMsg';
+import IframeHolder from '../commonfiles/IframeHolder';
 import {Row, Col} from 'react-bootstrap'
 
 

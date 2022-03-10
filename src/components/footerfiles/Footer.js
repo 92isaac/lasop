@@ -2,8 +2,8 @@ import React from 'react'
 import FooterLinks from './FooterLinks';
 import FooterSendMsg from './FooterSendMsg';
 import FooterServices from './FooterServices';
-import Location from './Location';
-import CurrentYear from "./CurrentYear";
+import Location from '../commonfiles/Location';
+import CurrentYear from '../commonfiles/CurrentYear'
 import {Row, Col } from 'react-bootstrap'
 
 

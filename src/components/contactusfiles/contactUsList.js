@@ -1,4 +1,4 @@
-import WhatsApp from '../assets/download.png'
+import WhatsApp from '../../assets/download.png'
 
 const contactUs = [
   {

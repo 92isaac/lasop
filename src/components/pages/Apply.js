@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom'
-import ChoseCourse from '../ChoseCourse';
-import Lecturetime from '../Lecturetime';
+import ChoseCourse from '../formandpaymentfiles/ChoseCourse';
+import Lecturetime from '../formandpaymentfiles/Lecturetime';
 
 
 // export const StudyContext = React.createContext()

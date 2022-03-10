@@ -1,6 +1,6 @@
 import React from 'react';
-import View from '../assets/2.jpg'
-import ApplyBtn from './ApplyBtn';
+import View from '../../assets/2.jpg'
+import ApplyBtn from '../commonfiles/ApplyBtn';
 
 
 const Duration = () => {

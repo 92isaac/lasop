@@ -1,7 +1,7 @@
-import First from "../assets/1.jpg";
-import Second from "../assets/2.jpg";
-import Third from "../assets/3.jpg";
-import Fourth from "../assets/4.jpg";
+import First from "../../assets/1.jpg";
+import Second from "../../assets/2.jpg";
+import Third from "../../assets/3.jpg";
+import Fourth from "../../assets/4.jpg";
 
 const sliderImage = [
   {

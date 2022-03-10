@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import BackendImg from '../assets/Backend.png'
-import Footer from './Footer'
+import BackendImg from '../../assets/Backend.png'
+import Footer from '../footerfiles/Footer'
 
 const Backend = () => {
   return <div>
