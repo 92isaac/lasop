@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { NavDropdown } from 'react-bootstrap'
 import Logo from '../../assets/logo.png'
 
 const NavbarR = () => {
@@ -62,6 +63,15 @@ const [click, setClick] = useState(false);
                 FAQ
               </NavLink>
             </li>
+            <NavDropdown
+          id="nav-dropdown-dark-example"
+          title="Mentor"
+        >
+          <NavDropdown.Item href="#action/3.1">Web Development</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">App Development</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Frontend Developmnet</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.4">Backend Development</NavDropdown.Item>
+        </NavDropdown>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
