@@ -146,7 +146,7 @@ A Node.js app runs in a single process, without creating a new thread for every 
   <p>MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. It is a data driven schema less NoSql database. It is a great tool to know. The syntax is very similar to javascript making it much easier to learn. You can use it &nbsp;for projects of any size and also very easy to scale up or down depending on your requirement. In this module, you will learn:</p>
   <ol>
     <li>SQL and NoSql concepts</li>
-	<li>Create and manage&nbsp;<a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
+	<li>Create and manage&nbsp;<a href="https://www.mongodb.com/" target="blank">MongoDB</a></li>
 	<li>Migration of data into MongoDB</li>
 	<li>MongoDB with PYTHON</li>
 	<li>Services offered by MongoDB</li>

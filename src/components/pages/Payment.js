@@ -7,10 +7,26 @@ import UssdPayment from '../UssdPayment';
 // const check = ( isActive ) => {isActive ? 'page-off' : ''}
 
 
-const Payment = () => {
+  // const ussd=()=>{
+  // return (<UssdPayment/>
+  // )}
+
+
+const Payment = (props) => {
+
   
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(click);
+  const [pay, setPay] = useState(false);
+  const [ussd, setUssd] = useState(false);
+
+  const ussdClick =()=>{
+    setPay(false)
+    setUssd(true)
+  }
+
+  const paymentClick =()=>{
+    setPay(true)
+    setUssd(false)
+  }
 
   return ( <div className='Payment-page'>
     <div>
@@ -32,29 +48,22 @@ const Payment = () => {
 
     <div>
         <div class="custom-control custom-radio">
-      <input type="radio" name="customRadio" onClick={ handleClick}/>
+      <input type="radio" name="customRadio" onClick={ussdClick}/>
       <label class="form-check-label" for="customRadio1">USSD</label>
         </div>
 
       <div class="custom-control custom-radio">
-  <input type="radio" name="customRadio"  onClick={ handleClick}/>
+  <input type="radio" name="customRadio"  onClick={paymentClick}/>
   <label class="form-check-label" for="customRadio2">Card payment</label>
-
 </div>
     </div>
           </div>
     </div >
     <div >
-
-
-       <div className={({ isActive }) => (isActive ? 'page-off ' : 'card-page-off ')} >
-      <UssdPayment/>
+       <div>
+      {ussd && <UssdPayment/>}
       </div>
-
-      <div className={({ isActive }) => (isActive ? 'page-off ' : 'card-page-off ')} >
-       <CardPaymentPage/>
-      </div> 
-
+          {pay && <CardPaymentPage/>}
     </div>
   </div>)
 

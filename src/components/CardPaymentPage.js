@@ -1,8 +1,13 @@
 import React, {useState}from 'react';
 
+const makePayment=(e)=>{
+  e.preventDefault()
+}
+
+
 const CardPaymentPage = () => {
   const [pay, setPay] =useState({cName:"", ccNum:"", expMonth:"", exyYear:"", cvv:""})
-  return  <form >
+  return  <form onSubmit={makePayment}>
            <div className="col-50">
             <h3>Payment</h3>
             <label for="fname">Accepted Cards</label>

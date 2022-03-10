@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   font-family: 'Kiwi Maru', serif;
+  /* outline: 2px solid red; */
+  /* overflow: none; */
+  scroll-behavior: smooth;
 }
 
 /* navbar */
@@ -342,13 +345,8 @@ optgroup,
 
 .application-button:hover{
   background-color: #7373f5;
-  /* padding: 5px; */
   color: #fff;
-    /* border-radius: 50px;
-  box-shadow: 14px 14px 20px #cbced1,
-   -14px -14px 20px white; */
-
-   border-radius: 5px;
+  border-radius: 5px;
    box-shadow: 0 0 5px #03e9f4,
    0 0 25px #03e9f4,
    0 0 50px #03e9f4,
@@ -365,7 +363,6 @@ optgroup,
 :checked~.sub2 {
   display: flex;
   justify-content: space-evenly;
-  /* margin-left: 40px; */
 }
 
 .sub1 {
@@ -374,15 +371,15 @@ optgroup,
 }
 
 
-
-/* payment */
-
-.page-off {
-  display: none;
+.display-time label{
+  padding: 0 15px;
+  font-size: 15px;
 }
 
-.card-page-off {
-  display: none;
+/*  PAYMENT PAGE */
+
+.ussd{
+  margin-top: 100px;
 }
 
 .Payment-page {
@@ -398,7 +395,6 @@ optgroup,
 
 .col-50 {
   -ms-flex: 50%;
-  /* IE10 */
   flex: 50%;
   padding: 0 16px;
 }
@@ -465,10 +461,6 @@ label {
 }
 
 
-
-
-
-
 /* WHAT WE DO */
 .whatwedo-container{
   margin: 0 10px;
@@ -502,6 +494,39 @@ label {
 
 .whatwedo p{
   font-size: 15px;
+}
+
+@media screen and (max-width: 960px) {
+  .whatwedo-container {
+    margin: 0 10px;
+    border-radius: 20px;
+    padding: 10px 5px;
+    background: #ecf0f3;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .whatwedo-bg {
+    display: block;
+    justify-content: space-between;
+    padding: 40px;
+    background: #fff;
+  }
+
+  .whatwedo {
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
+  }
+
+  .whatwedo h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .whatwedo p {
+    font-size: 15px;
+  } 
 }
 
 
@@ -594,12 +619,6 @@ footer{
 }
 
 
-
-/* .trye img{
-  width: 300px;
-} */
-
-
 /* CONTACT US PAGE */
 
 .contactus-text{
@@ -611,8 +630,6 @@ footer{
 }
 
 .contactus-card-container{
-  /* display: flex; */
-  /* justify-content: space-between; */
   margin: 0 30px;
 }
 
@@ -686,9 +703,6 @@ footer{
   padding: 10px 50px;
 }
 
-/* .frontend-header{
-  display: block;
-} */
 
 .frontend-header-img{
   margin: 0;
@@ -811,26 +825,6 @@ footer{
 }
 
 
-
-
-/* const [click,
-setClick]=useState(false);
-const handleClick=()=>setClick(click);
-const Close=()=>setClick(click ? true : false); */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 960px) {
 
   .nav-menu {
@@ -877,12 +871,6 @@ const Close=()=>setClick(click ? true : false); */
   }
 }
 
-/* @media screen and (max-width: 460px) {
-
-  .goals-play {
-    display: block;
-  }
-} */
 
 
 @media (max-width: 800px) {
@@ -899,9 +887,3 @@ const Close=()=>setClick(click ? true : false); */
   }
 
 }
-
-
-/* const [click,
-setClick]=useState(false);
-const handleClick=()=>setClick(click);
-const Close=()=>setClick(click ? true : false); */

@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom'
 import ChoseCourse from '../ChoseCourse';
 import Lecturetime from '../Lecturetime';
-import ModeOfStudy from '../ModeOfStudy';
 
 
 // export const StudyContext = React.createContext()
@@ -49,8 +48,6 @@ const Apply = () => {
 
     <ChoseCourse/>
     <br/>
-    {/* <ModeOfStudy/>
-    <br/> */}
     <Lecturetime/>
     <br/>
     	<button className="application-button" type='submit'>Submit</button>

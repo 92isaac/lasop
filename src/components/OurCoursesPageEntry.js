@@ -1,5 +1,5 @@
 import React from 'react';
-import {Accordion, button} from 'react-bootstrap'
+import {Accordion} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 
