@@ -63,15 +63,16 @@ const [click, setClick] = useState(false);
                 FAQ
               </NavLink>
             </li>
-            <NavDropdown
-          id="nav-dropdown-dark-example"
-          title="Mentor"
-        >
-          <NavDropdown.Item href="#action/3.1">Web Development</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">App Development</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Frontend Developmnet</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.4">Backend Development</NavDropdown.Item>
-        </NavDropdown>
+            <li className="nav-item">
+              <NavLink
+              
+                to="/Mentor"
+                className={({ isActive }) => (isActive ? 'active nav-links' : 'nav-links')}
+               onClick={click ? handleClick : null}
+              >
+                Mentor
+              </NavLink>
+            </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fa fa-times" : "fa fa-bars"}></i>

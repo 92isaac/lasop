@@ -224,6 +224,61 @@
 }
 
 
+/* Our Team */
+
+.ourteam-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ourteam-text{
+  margin-left: 80px;
+}
+
+.ourteam-text span{
+  color: gold;
+}
+
+.ourteam-container h4{
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+}
+
+.ourteam-img{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.col-img .card-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.col-img{
+  margin: 20px;
+  text-align: center;
+
+}
+
+@media screen and (max-width: 960px){
+  .ourteam-img{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 460px){
+  .ourteam-container{
+    display: block;
+  }
+  
+  .ourteam-img{
+    display: block;
+  }
+
+}
+
 /* FIGURE */
 
 .duration-text{
@@ -815,14 +870,9 @@ footer{
 
 .about-us-header h3{
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.about-us{
-  background-image: linear-gradient(to bottom, rgba(252, 252, 255, 0.52), rgba(255, 254, 255, 0.73)),
-  url('./assets/logo.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 
 @media screen and (max-width: 960px) {
